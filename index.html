@@ -25,7 +25,14 @@
             <p class="desc">確かなスタッフによる業務サポート</p>
           </div>
         </div>
-        <button type="button" class="nav-button">
+        <nav class="nav">
+          <ul>
+            <li><a href="#">会社情報</a></li>
+            <li><a href="#">サービス</a></li>
+            <li><a href="#" class="btn">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="nav-button" onclick="navFunc()">
           <span class="sr-only">MENU</span>
         </button>
       </div>
@@ -148,5 +155,10 @@
         </ul>
       </div>
     </footer>
+    <script>
+      function navFunc() {
+        document.querySelector("html").classList.toggle("open")
+      }
+    </script>
   </body>
 </html>
