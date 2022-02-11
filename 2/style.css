@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* 変数 */
+:root {
+  /* 色 */
+  --primary: #ff953a;
+  --darkgray: #222222;
+  --midgray: #414141;
+  --gray: #888888;
+  --white: #ffffff;
+}
+
+/* サイズの基準: 1rem = 100px */
+:root {
+  font-size: 100px;
+}
+
+/* テキストの基本設計 */
+body {
+  color: var(--darkgray);
+  font-size: 0.16rem;
+  font-family: sans-serif;
+  line-height: 1.8;
+}
+
+/* リセット / ノーマライズ / サニタイズ */
+bosy,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ヒーロー */
+.hero {
+  background-image: url(img/cafe.jpg);
+  background-position: center;
+  background-size: cover;
+  background-origin: var(--darkgray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html,
+body,
+.hero {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .hero h1 {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+/* ヒーロー: 矢印 */
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: url(img/arrow.svg);
+  display: block;
+  width: 0.16rem;
+  padding: 0.18rem 0.15rem 0.1rem;
+  border-radius: 50% 50% 0 0;
+  background-color: var(--white);
+  line-height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .hero::after {
+    width: 0.31rem;
+    padding: 0.35rem 0.31rem 0.16rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
