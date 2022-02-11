@@ -679,4 +679,28 @@ a:hover {
             align-items: center;
   }
 }
+
+/* フェードイン */
+body {
+  -webkit-animation: fade 5s;
+          animation: fade 5s;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
