@@ -198,26 +198,28 @@ a:hover {
 }
 
 /* ナビゲーションメニュー(PC) */
+@media (min-width: 900px) {
+  .nav-button {
+    display: none;
+  }
 
-.nav-button {
-  display: none;
+  .nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: #333333;
+  }
+
+  .nav li:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  .nav .btn {
+    width: 148px;
+    border-color: #cdd6dd;
+  }
 }
 
-.nav ul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  color: #333333;
-}
-
-.nav li:not(:last-child) {
-  margin-right: 23px;
-}
-
-.nav .btn {
-  width: 148px;
-  border-color: #cdd6dd;
-}
 /* ヒーロー */
 .hero {
   height: 400px;
